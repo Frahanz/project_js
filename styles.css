@@ -1,0 +1,271 @@
+/* Style untuk navbar */
+.navbar {
+  background-color: #333; /* Warna latar belakang navbar */
+  color: white; /* Warna teks pada navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Padding di dalam navbar */
+  border-radius: 10px;
+}
+
+/* Style untuk logo */
+.logo {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210205/pngtree-purple-abstract-gradient-geometric-low-side-background-image_555325.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style untuk menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white; /* Warna teks pada link menu */
+  position: relative; /* Diperlukan untuk posisi relatif link */
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Jarak garis bawah dari teks */
+  left: 0;
+  width: 0;
+  height: 2px; /* Panjang garis bawah */
+  background-color: transparent; /* Warna awal garis bawah */
+  transition: width 0.3s ease-in-out; /* Efek transisi lebar garis */
+}
+
+.menu li a:hover::after {
+  width: 100%; /* Lebar garis bawah saat dihover */
+  background-color: yellow; /* Warna garis bawah saat dihover */
+}
+
+/* Style untuk tombol Register */
+/* Style untuk tombol Register */
+.register-btn {
+  background-color: #3498db; /* Warna latar belakang tombol */
+  color: white; /* Warna teks pada tombol */
+  padding: 10px 20px; /* Padding pada tombol */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efek transisi warna latar belakang */
+}
+
+.register-btn:hover {
+  background-color: #2980b9; /* Warna latar belakang saat dihover */
+}
+
+.mySlides {
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 100%;
+  height: 550px;
+  filter: contrast(150%);
+  filter: brightness(50%);
+}
+
+.brightness-effect {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.fadeEffect {
+  animation-name: none;
+  animation-duration: 1s;
+}
+
+.divider {
+  border-top: 1px solid #000; /* Garis atas dengan ketebalan 1 piksel dan warna hitam */
+  /* Atau properti lain yang sesuai dengan kebutuhan */
+}
+
+/* Gaya untuk kotak gambar */
+.image-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.image-box {
+  width: 200px;
+  text-align: center;
+  background-color: #f0f0f0; /* Warna latar belakang kotak gambar */
+  padding: 20px; /* Padding kotak gambar */
+  border-radius: 8px; /* Rounding kotak gambar */
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.801); /* Shadow kotak gambar */
+}
+
+/* Gaya untuk gambar */
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Gaya untuk keterangan gambar */
+.image-description {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.title {
+  background-image: url("https://www.teahub.io/photos/full/92-924520_high-resolution-colorful-background.jpg");
+  background-position: 10px;
+  background-size: cover;
+  background-clip: text;
+  filter:brightness(80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3em;
+  font-family:Impact,'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Menggerakkan gambar ke kiri sejauh lebar kontainer */
+  }
+}
+
+/* Gaya umum */
+.pemograman {
+  width: 100%; /* Lebar kontainer */
+  overflow: hidden; /* Mengatur konten yang lebih besar dari kontainer agar terpotong */
+  position: relative; /* Untuk mengatur posisi relatif pada gambar */
+}
+
+.image-list {
+  display: flex; /* Membuat tata letak gambar secara horizontal */
+  animation: slideToLeft 15s linear infinite; /* Animasi slide-to-left dengan durasi 15 detik */
+}
+
+/* CSS untuk card */
+.card {
+  display: flex;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s ease; /* Efek transisi perubahan warna latar belakang */
+}
+
+.card-img {
+  width: 40%; /* Lebar gambar */
+  object-fit: cover;
+}
+
+.card-description {
+  padding: 20px;
+}
+
+.card-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card-description a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.more:hover {
+  background-color: #5f5656;
+}
+
+footer {
+  color: white;
+  background-color: rgb(75, 48, 18);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: auto;
+  margin: 0 5px; /* Memberikan sedikit ruang antara ikon */
+}
+
+.button-wrapper {
+  padding: 5px 20px;
+  margin-left: 10px; /* Memberikan ruang di antara ikon dan tombol */
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+/* CSS untuk popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.popup-content {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #555;
+}
