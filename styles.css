@@ -153,6 +153,7 @@ h1 {
 
 /* Gaya umum */
 .pemograman {
+  padding-left: 20%;
   width: 100%; /* Lebar kontainer */
   overflow: hidden; /* Mengatur konten yang lebih besar dari kontainer agar terpotong */
   position: relative; /* Untuk mengatur posisi relatif pada gambar */
